@@ -24,3 +24,7 @@ npm install
 node server.js
 
 4.Try a search: Open your browser and go to: http://localhost:3000/api/v1/search/product?query=Sasta iPhone
+
+
+
+LLM Chat Link:https://chatgpt.com/share/697cb60b-e7f0-8001-9e94-8087bd77cfd2
