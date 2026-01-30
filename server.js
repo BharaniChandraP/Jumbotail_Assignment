@@ -9,7 +9,7 @@ const Fuse = require('fuse.js');
 const app = express();
 app.use(express.json());
 
-// 1. LOAD DATA IN-MEMORY
+
 let products = [];
 try {
     const data = fs.readFileSync('./scraped_products.json', 'utf8');
@@ -20,7 +20,7 @@ try {
     products = [];
 }
 
-// 2. CONFIGURE FUZZY SEARCH (Fuse.js)
+
 const fuseOptions = {
     keys: ['title', 'description', 'Metadata.category', 'Metadata.brand'],
     threshold: 0.4, 
