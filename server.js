@@ -1,7 +1,4 @@
 
-
-
-
 const express = require('express');
 const fs = require('fs');
 const Fuse = require('fuse.js');
@@ -124,6 +121,6 @@ app.get('/api/v1/search/product', (req, res) => {
 
 const PORT = 3000;
 app.listen(PORT, () => {
-    console.log(`\n🚀 Search Microservice Running`);
+    console.log(`\n Search Microservice Running`);
     console.log(`URL: http://localhost:${PORT}/api/v1/search/product?query=Sasta iPhone`);
 });
